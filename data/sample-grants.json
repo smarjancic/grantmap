@@ -1,0 +1,34 @@
+[
+	{
+		"id": 1,
+		"year": 2025,
+		"country": "us",
+		"region": "california",
+		"audience": "nonprofit",
+		"focusArea": "education",
+		"title": "California Education Support Fund",
+		"description": "Support for nonprofits running educational programs in California.",
+		"deadline": "2025-09-01",
+		"agency": "CA Dept. of Education",
+		"slug": "california-education-support-fund",
+		"sourceUrl": "https://example.com/ca-ed",
+		"amount": 25000,
+		"currency": "USD"
+	},
+	{
+		"id": 2,
+		"year": 2025,
+		"country": "us",
+		"region": "texas",
+		"audience": "startup",
+		"focusArea": "health",
+		"title": "Texas Health Innovation Grant",
+		"description": "Health-tech startup grants supporting underserved regions.",
+		"deadline": "2025-10-15",
+		"agency": "TX Health Authority",
+		"slug": "texas-health-innovation-grant",
+		"sourceUrl": "https://example.com/tx-health",
+		"amount": 35000,
+		"currency": "USD"
+	}
+]
