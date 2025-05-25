@@ -13,7 +13,7 @@ export default async function handler(
   }
 
   // Check if environment variables are set
-  if (!AIRTABLE_ACCESS_TOKEN || !AIRTABLE_BASE_ID) {
+  if (!AIRTABLE_ACCESS_TOKEN || !AIRTABLE_BASE_ID || !AIRTABLE_TABLE_NAME) {
     console.error('Missing Airtable credentials');
     return res.status(500).json({ error: 'Server configuration error' });
   }
