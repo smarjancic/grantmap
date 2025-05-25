@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import Layout from '@/components/Layout';
 import FilterSidebar from '@/components/FilterSidebar';
 import GrantCard from '@/components/GrantCard';
 import { Grant } from '@/types/grant';

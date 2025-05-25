@@ -1,7 +1,3 @@
-const AIRTABLE_ACCESS_TOKEN = process.env.NEXT_PUBLIC_AIRTABLE_ACCESS_TOKEN;
-const AIRTABLE_BASE_ID = process.env.NEXT_PUBLIC_AIRTABLE_BASE_ID;
-const AIRTABLE_TABLE_NAME = 'Grants';
-
 export async function getGrants(filters: {
   search?: string;
   category?: string;
