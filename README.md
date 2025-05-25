@@ -1,40 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# GrantMap
 
-## Getting Started
+GrantMap is a simple Next.js application for browsing and tracking grant opportunities. The project uses Tailwind CSS and connects to an Airtable base for storing grant data.
 
-First, run the development server:
+## Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Install dependencies**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Create an environment file**
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+   Copy `.env.local.example` to `.env.local` (create the example file if it does not exist) and provide the following variables:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+   ```env
+   AIRTABLE_ACCESS_TOKEN=your_server_token
+   AIRTABLE_BASE_ID=your_base_id
+   AIRTABLE_TABLE_NAME=Grants
+   NEXT_PUBLIC_AIRTABLE_ACCESS_TOKEN=your_public_token
+   NEXT_PUBLIC_AIRTABLE_BASE_ID=your_base_id
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   `AIRTABLE_ACCESS_TOKEN`, `AIRTABLE_BASE_ID` and `AIRTABLE_TABLE_NAME` are used by the API routes under `pages/api`. The `NEXT_PUBLIC_*` variables are exposed to the browser for client side requests.
 
-## Learn More
+3. **Run the development server**
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm run dev
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+   The application will be available at [http://localhost:3000](http://localhost:3000).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Development Commands
 
-## Deploy on Vercel
+- `npm run dev` – start the Next.js development server
+- `npm run lint` – run ESLint on the project
+- `npm run build` – create a production build
+- `npm run start` – run the compiled production server
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+GrantMap is still a work in progress. Feel free to open issues or pull requests if you encounter problems or have suggestions.
