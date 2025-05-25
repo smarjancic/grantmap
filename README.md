@@ -22,8 +22,6 @@ GrantMap is a simple Next.js application for browsing and tracking grant opportu
    NEXT_PUBLIC_AIRTABLE_BASE_ID=your_base_id
    ```
 
-   `AIRTABLE_ACCESS_TOKEN`, `AIRTABLE_BASE_ID` and `AIRTABLE_TABLE_NAME` are used by the API routes under `pages/api`. The `NEXT_PUBLIC_*` variables are exposed to the browser for client side requests.
-
 3. **Run the development server**
 
    ```bash
