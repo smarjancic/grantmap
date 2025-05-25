@@ -1,4 +1,3 @@
-import { Grant, FocusArea } from '../types/grant';
 import FilterBlock from './FilterBlock';
 import { FOCUS_EMOJIS, AMOUNT_TIERS } from '../constants/grants';
 
