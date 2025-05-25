@@ -1,12 +1,5 @@
-import { FocusArea } from '../types/grant';
+import { FilterBlockProps } from '../types/grant';
 
-interface FilterBlockProps {
-    label: string;
-    values: string[];
-    selected: string[];
-    toggle: (value: string) => void;
-    format?: (value: string) => string;
-}
 
 export default function FilterBlock({
     label,
