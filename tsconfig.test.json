@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "dist-test",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "types": []
+  },
+  "include": [
+    "lib/slugify.ts",
+    "__tests__/slugify.test.ts"
+  ]
+}
