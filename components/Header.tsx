@@ -19,10 +19,12 @@ export default function Header() {
     e.preventDefault();
     if (search.trim()) {
       setIsSubmitting(true);
-      router.push(`/?search=${encodeURIComponent(search.trim())}`);
+      router
+        .push(`/?search=${encodeURIComponent(search.trim())}`)
+        .finally(() => setIsSubmitting(false));
       setSearch('');
     } else {
-      router.push('/');
+      router.push('/').finally(() => setIsSubmitting(false));
     }
   };
 
